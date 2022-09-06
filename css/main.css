@@ -13,9 +13,9 @@ ul {
   padding: 0;
 }
 
-img {
+.img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -28,22 +28,13 @@ li {
 }
 
 .container {
-  width: 1280px;
+  max-width: 1280px;
+  padding: 0 115px;
   margin: 0 auto;
-}
-
-.hero {
-  background-color: #ffb8ca;
-}
-
-.hero__container {
-  padding-top: 35px;
+  position: relative;
 }
 
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
 }
 
 .header__logo {
@@ -80,6 +71,8 @@ li {
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
+  width: 159px;
+  height: 44px;
 }
 
 .navigation__button:hover {
@@ -92,15 +85,112 @@ li {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 159px;
-  height: 44px;
   border-radius: 22px;
   cursor: pointer;
   border: none;
 }
 
-.button__icon {
-  height: 8px;
-  width: auto;
+.button__icon-right {
   margin-left: 8px;
+}
+
+.hero {
+  background-color: #ffb8ca;
+  height: 665px;
+}
+
+.hero__container {
+  padding-top: 35px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero__buttons {
+  display: flex;
+  margin-top: 25px;
+}
+
+.hero__button-white {
+  width: 138px;
+  height: 40px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #d41443;
+}
+.hero__button-white:hover {
+  background: #ecebeb;
+  transition-duration: 0.5s;
+}
+.hero__button-color {
+  margin-right: 15px;
+  width: 104px;
+  height: 40px;
+  background-color: #d41443;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero__leftside {
+  width: 277px;
+  position: absolute;
+  top: 171px;
+  display: flex;
+  flex-direction: column;
+}
+.hero__leftside__title {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 43px;
+  text-align: left;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: white;
+}
+.hero__leftside__title-accent {
+  font-size: 58px;
+  line-height: 44px;
+  color: #d41443;
+}
+.hero__leftside__thumb {
+  position: absolute;
+  left: 77px;
+  margin-top: 342px;
+  display: flex;
+  align-items: center;
+}
+
+.hero__leftside__text {
+  width: 200px;
+  height: 78px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #ffffff;
+  position: relative;
+  top: 398px;
+  left: 180px;
+}
+.hero__leftside__button {
+  border: none;
+  background-color: #ffb8ca;
+  cursor: pointer;
 }
